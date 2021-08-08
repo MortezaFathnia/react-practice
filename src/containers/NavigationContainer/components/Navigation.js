@@ -24,6 +24,7 @@ import NavItem from "./NavItem";
 import { Route } from 'react-router-dom'
 import { Switch as RouterSwitch } from 'react-router-dom';
 import VacationsContainer from 'containers/VacationsContainer';
+import TasksContainer from 'containers/TasksContainer';
 import LoginPage from 'containers/LoginPage';
 import ProfileContainer from 'containers/ProfileContainer';
 
@@ -79,7 +80,7 @@ function Navigation({ routes, user, logout }) {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap className={classes.title}>
-                        Vacations
+                        Tasks
                     </Typography>
                     {user && <Typography variant="h6" noWrap>{user.username}</Typography>}
                     {user && <Button onClick={logout} color="inherit">Sign Out</Button>}
@@ -120,7 +121,7 @@ function Navigation({ routes, user, logout }) {
                 })}
             >
                 <RouterSwitch>
-                    <Route path='/' exact component={VacationsContainer} />
+                    <Route path='/' exact component={TasksContainer} />
                     <Route path='/login' exact component={LoginPage} />
                     <Route path='/profile' exact component={ProfileContainer} />
                 </RouterSwitch>

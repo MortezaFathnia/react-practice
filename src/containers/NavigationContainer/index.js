@@ -10,9 +10,9 @@ const mapStateToProps = (state) => ({
             path: 'home',
             text: 'Home' },
         {
-            key: 'vacations',
-            path: 'vacations',
-            text: 'Vacations' }
+            key: 'tasks',
+            path: 'tasks',
+            text: 'Tasks' }
         ],
     user: getUser(state),
 });

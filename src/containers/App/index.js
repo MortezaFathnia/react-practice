@@ -23,8 +23,9 @@ function App({ auth, theme }) {
   return (
     <BrowserRouter>
       <ThemeProvider theme={theme}>
-        {!auth.isAuthenticated && <LoginPage />}
-        {auth.isAuthenticated && <NavigationContainer />}
+        {/* {!auth.isAuthenticated && <LoginPage />}
+        {auth.isAuthenticated && <NavigationContainer />} */}
+        <NavigationContainer/>
       </ThemeProvider>
     </BrowserRouter>
     );

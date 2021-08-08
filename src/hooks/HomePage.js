@@ -4,7 +4,7 @@ import PageWrapper from "../components/Common/PageWrapper";
 import Switch from "@material-ui/core/Switch";
 import Typography from "@material-ui/core/Typography";
 
-const labels = ['First Name', 'Last Name'];
+const labels = ['New Task'];
 
 const HomePage = () => {
 
