@@ -23,11 +23,10 @@ import { styles } from "../meta/styles";
 import NavItem from "./NavItem";
 import { Route } from 'react-router-dom'
 import { Switch as RouterSwitch } from 'react-router-dom';
-import VacationsContainer from 'containers/VacationsContainer';
 import TasksContainer from 'containers/TasksContainer';
 import LoginPage from 'containers/LoginPage';
 import ProfileContainer from 'containers/ProfileContainer';
-
+import BoardsContainer from 'containers/BoardsContainer';
 
 const useStyles = styles;
 const icons = {
@@ -122,6 +121,7 @@ function Navigation({ routes, user, logout }) {
             >
                 <RouterSwitch>
                     <Route path='/' exact component={TasksContainer} />
+                    <Route path='/boards' exact component={BoardsContainer}/>
                     <Route path='/login' exact component={LoginPage} />
                     <Route path='/profile' exact component={ProfileContainer} />
                 </RouterSwitch>
